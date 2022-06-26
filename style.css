@@ -30,6 +30,14 @@
   .form-inline button:hover {
     background-color: royalblue;
   }
+
+body {
+    height: 100vh;
+  }
+
+
+
+
   
   /* Add responsiveness - display the form controls vertically instead of horizontally on screens that are less than 800px wide */
   @media (max-width: 800px) {
@@ -42,3 +50,5 @@
       align-items: stretch;
     }
   }
+
+ 
