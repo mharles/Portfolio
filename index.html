@@ -5,11 +5,48 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Landing Page</title>
+    <title>Second Order Equation</title>
 </head>
 
 <body>
-    <p>Hello World! Welcome to my page!</p>
+    <p>Enter equation</p>
+    <form class="form-inline">
+        <label for="x2">x<sup>2</sup>:</label>
+        <input type="number" id="x2" name="x2">
+        <label for="x1">x<sup>1</sup>:</label>
+        <input type="number" id="x1" name="x1">
+        <label for="x0">x<sup>0</sup>:</label>
+        <input type="number" id="x0" name="x0">
+
+        <button type="button" onclick="calculateResults()">Submit</button>
+    </form>
+
+    <br>
+
+    <p id="result"></p>
+
+    <script>
+        function calculateResults() {
+            let x1
+            let x2
+            let rex1, imx1, rex2, imx2
+            let delta
+            delta = document.getElementById("x1").value * document.getElementById("x1").value - (4 * document.getElementById("x2").value * document.getElementById("x0").value)
+            if (delta >= 0) {
+                x1 = (document.getElementById("x1").value * -1 + Math.sqrt(delta)) / (2 * document.getElementById("x2").value)
+                x2 = (document.getElementById("x1").value * -1 - Math.sqrt(delta)) / (2 * document.getElementById("x2").value)
+                document.getElementById("result").innerHTML = "Results: x1 = " + x1 + " x2 = " + x2
+            } else {
+                rex1 = (document.getElementById("x1").value * -1) / (2 * document.getElementById("x2").value)
+                imx1 = (Math.sqrt(delta * -1)) / (2 * document.getElementById("x2").value)
+                rex2 = (document.getElementById("x1").value * -1) / (2 * document.getElementById("x2").value)
+                imx2 = (Math.sqrt(delta * -1) * -1) / (2 * document.getElementById("x2").value)
+                document.getElementById("result").innerHTML = "Results: x1 = " + rex1 + " + " + imx1 + "i;   " + "   x2 = " + rex2 + " " + imx2 + "i";
+            }
+        }
+    </script>
 </body>
+
+
 
 </html>
