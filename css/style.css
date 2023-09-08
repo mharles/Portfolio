@@ -7,7 +7,7 @@ body, h1, h2, h3, p {
 /* Set a background color and font family */
 body {
     background-color: #f7f7f7;
-    font-family: 'Roboto', sans-serif;
+    font-family: Arial, sans-serif;
 }
 
 /* Style the header and navigation */
@@ -47,18 +47,16 @@ body {
     color: #333;
 }
 
-/* Style the hero section */
-.hero {
-    background-image: url('hero-background.jpg');
-    background-size: cover;
-    color: #fff;
-    padding: 150px 0;
+/* Style the sections */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
 }
 
-.hero-content {
-    text-align: center;
-}
-
-.hero h1 {
+h1 {
     font-size: 36px;
-    font
+    margin-bottom: 20px;
+}
+
+/* Add more CSS styling for your specific content */
