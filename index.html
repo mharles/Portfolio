@@ -4,48 +4,59 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>God of Europe Instagram</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- Custom CSS for centering content -->
     <style>
-        /* Set a dark blue background color */
         body {
-            background-color: #00008B; /* Dark blue color code (adjust as needed) */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f8f9fa; /* Background color (light gray) */
         }
 
-        /* Additional CSS styles can be added here */
+        .container {
+            text-align: center;
+        }
+
+        .btn-primary {
+            margin: 10px;
+        }
     </style>
 </head>
 <body>
-    <header>
-        <h1>Welcome to God of Europe's Instagram</h1>
-    </header>
-    
-    <nav>
-        <ul>
-            <li><a href="https://instagram.com/godofeurope" target="_blank">Instagram</a></li>
-            <li><a href="https://example.com/digital-product-1" target="_blank">Digital Product 1</a></li>
-            <li><a href="https://example.com/digital-product-2" target="_blank">Digital Product 2</a></li>
-        </ul>
-    </nav>
-    
-    <section>
-        <h2>About Me</h2>
-        <p>Welcome to my Instagram page! I'm passionate about sharing my journey and experiences in Europe. Follow me on Instagram to stay updated with my adventures.</p>
-    </section>
-    
-    <section>
-        <h2>Explore My Content</h2>
-        <p>Check out my digital products:</p>
-        <ul>
-            <li><a href="https://example.com/digital-product-1" target="_blank">Digital Product 1</a></li>
-            <li><a href="https://example.com/digital-product-2" target="_blank">Digital Product 2</a></li>
-        </ul>
-    </section>
-    
-    <footer>
-        <p>Connect with me on social media:</p>
-        <ul>
-            <li><a href="https://instagram.com/godofeurope" target="_blank">Instagram</a></li>
-            <!-- Add links to other social media accounts as needed -->
-        </ul>
-    </footer>
+    <div class="container">
+        <h1 class="mt-5">Welcome to God of Europe's Instagram</h1>
+
+        <section class="mt-5">
+            <h2>About Me</h2>
+            <p>Welcome to my Instagram page! I'm passionate about sharing my journey and experiences in Europe. Follow me on Instagram to stay updated with my adventures.</p>
+        </section>
+
+        <section class="mt-5">
+            <h2>Explore My Content</h2>
+            <div class="btn-group">
+                <a href="https://example.com/digital-product-1" class="btn btn-primary" target="_blank">Digital Product 1</a>
+                <a href="https://example.com/digital-product-2" class="btn btn-primary" target="_blank">Digital Product 2</a>
+            </div>
+        </section>
+
+        <footer class="mt-5">
+            <p>Connect with me on social media:</p>
+            <div class="btn-group">
+                <a href="https://instagram.com/godofeurope" class="btn btn-primary" target="_blank">Instagram</a>
+                <!-- Add links to other social media accounts as needed -->
+            </div>
+        </footer>
+    </div>
+
+    <!-- Bootstrap JavaScript (optional, for advanced Bootstrap components) -->
+    <!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script> -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script> -->
+    <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> -->
 </body>
 </html>
