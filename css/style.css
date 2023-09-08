@@ -1,57 +1,29 @@
 /* Reset some default browser styles */
-body, h1, h2, h3, p {
+body, h1, p, img, a {
     margin: 0;
     padding: 0;
 }
 
-/* Set a background color and font family */
+/* Set a background image */
 body {
-    background-color: #f7f7f7;
+    background-image: url('background-image.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #fff;
     font-family: Arial, sans-serif;
 }
 
-/* Style the header and navigation */
-.header {
-    background-color: #fff;
-    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.1);
-}
-
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 0;
-}
-
-.navbar-logo {
-    font-size: 24px;
-    font-weight: bold;
-    text-decoration: none;
-    color: #333;
-}
-
-.navbar-menu {
-    list-style: none;
-    display: flex;
-    gap: 20px;
-}
-
-.navbar-menu li a {
-    text-decoration: none;
-    color: #666;
-    font-weight: 500;
-    transition: color 0.3s;
-}
-
-.navbar-menu li a:hover {
-    color: #333;
-}
-
-/* Style the sections */
+/* Center content vertically and horizontally */
 .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.centered-content {
+    text-align: center;
 }
 
 h1 {
@@ -59,4 +31,27 @@ h1 {
     margin-bottom: 20px;
 }
 
-/* Add more CSS styling for your specific content */
+img {
+    max-width: 100%;
+    margin: 20px 0;
+}
+
+p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.btn-primary {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
